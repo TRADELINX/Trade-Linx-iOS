@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DateCell" customModule="MartinsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4P-Ds-GfW">
+                        <rect key="frame" x="0.0" y="11" width="25" height="28"/>
+                        <color key="backgroundColor" red="0.96172839403152466" green="0.79817348718643188" blue="0.44697684049606323" alpha="0.22246368838028169" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="N2J-py-77f"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KN8-nN-EG7">
+                        <rect key="frame" x="25" y="11" width="25" height="28"/>
+                        <color key="backgroundColor" red="0.96172839403152466" green="0.79817348718643188" blue="0.44697684049606323" alpha="0.22" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="wAP-iW-KDD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pws-eT-P3X">
+                        <rect key="frame" x="3" y="3" width="44" height="44"/>
+                        <color key="backgroundColor" red="0.96172827482223511" green="0.7942010760307312" blue="0.44697779417037964" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="35P-d8-cSK"/>
+                            <constraint firstAttribute="width" secondItem="Pws-eT-P3X" secondAttribute="height" multiplier="1:1" id="gv8-TW-p8Z"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-eB-y5s">
+                        <rect key="frame" x="21" y="34" width="8" height="8"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ibo-eB-y5s" secondAttribute="height" multiplier="1:1" id="FQ2-om-sVe"/>
+                            <constraint firstAttribute="height" constant="8" id="Gx0-b8-arx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Y-FS-Zbs">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KN8-nN-EG7" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.5" id="9C2-J8-JpU"/>
+                <constraint firstItem="26Y-FS-Zbs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A2H-rf-csO"/>
+                <constraint firstAttribute="trailing" secondItem="KN8-nN-EG7" secondAttribute="trailing" id="AUR-9V-V32"/>
+                <constraint firstItem="ibo-eB-y5s" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Bo3-Tl-CTd"/>
+                <constraint firstAttribute="trailing" secondItem="26Y-FS-Zbs" secondAttribute="trailing" id="FEE-5N-3qp"/>
+                <constraint firstItem="C4P-Ds-GfW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JSX-PC-xZ0"/>
+                <constraint firstItem="KN8-nN-EG7" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="MSg-kL-75f"/>
+                <constraint firstItem="26Y-FS-Zbs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OkJ-Gk-9Ge"/>
+                <constraint firstItem="C4P-Ds-GfW" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.5" id="Wq4-hG-3wk"/>
+                <constraint firstItem="Pws-eT-P3X" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="a3b-E5-gfK"/>
+                <constraint firstAttribute="bottom" secondItem="ibo-eB-y5s" secondAttribute="bottom" constant="8" id="e7F-tJ-bLT"/>
+                <constraint firstAttribute="bottom" secondItem="26Y-FS-Zbs" secondAttribute="bottom" id="gkk-nc-N2C"/>
+                <constraint firstItem="Pws-eT-P3X" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kyb-Bc-1C6"/>
+                <constraint firstItem="C4P-Ds-GfW" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ye1-7r-hjQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="dotView" destination="ibo-eB-y5s" id="CeR-iC-Lrp"/>
+                <outlet property="label" destination="26Y-FS-Zbs" id="B6n-Gl-Y7e"/>
+                <outlet property="leftSelectionView" destination="C4P-Ds-GfW" id="br5-rz-CoP"/>
+                <outlet property="mainSelectionView" destination="Pws-eT-P3X" id="0WG-nI-309"/>
+                <outlet property="rightSelectionView" destination="KN8-nN-EG7" id="b35-qo-fxg"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

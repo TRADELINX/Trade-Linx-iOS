@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="KGk-i7-Jjw" customClass="EditProfileImagesCell" customModule="MartinsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQn-oV-Ftd" customClass="ShadowView" customModule="MartinsApp" customModuleProvider="target">
+                        <rect key="frame" x="16" y="26" width="80" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-W5-8Qf" customClass="RemoteImageView" customModule="MartinsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="CRT-e8-jIh"/>
+                            <constraint firstAttribute="bottom" secondItem="wJ8-W5-8Qf" secondAttribute="bottom" id="PxZ-fA-qsk"/>
+                            <constraint firstAttribute="trailing" secondItem="wJ8-W5-8Qf" secondAttribute="trailing" id="bnn-pe-u3g"/>
+                            <constraint firstItem="wJ8-W5-8Qf" firstAttribute="top" secondItem="PQn-oV-Ftd" secondAttribute="top" id="mew-tV-GoE"/>
+                            <constraint firstItem="wJ8-W5-8Qf" firstAttribute="leading" secondItem="PQn-oV-Ftd" secondAttribute="leading" id="s7F-jg-f8M"/>
+                            <constraint firstAttribute="height" constant="80" id="sER-dV-DaN"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVF-SI-ylT" customClass="ShadowButton" customModule="MartinsApp" customModuleProvider="target">
+                        <rect key="frame" x="41" y="91" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RVF-SI-ylT" secondAttribute="height" multiplier="1:1" id="5XI-Da-qsy"/>
+                            <constraint firstAttribute="width" constant="30" id="yjy-RK-BAE"/>
+                        </constraints>
+                        <state key="normal" image="camera"/>
+                        <connections>
+                            <action selector="chooseProfileAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qin-gA-TAh"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="REu-uH-Yo6">
+                        <rect key="frame" x="112" y="16" width="208" height="100"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="jKO-Ed-QeT"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WZt-ga-7K9">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PQn-oV-Ftd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0dz-zL-Bzd"/>
+                    <constraint firstItem="REu-uH-Yo6" firstAttribute="leading" secondItem="PQn-oV-Ftd" secondAttribute="trailing" constant="16" id="1Ui-id-zF0"/>
+                    <constraint firstItem="RVF-SI-ylT" firstAttribute="centerX" secondItem="PQn-oV-Ftd" secondAttribute="centerX" id="Kzj-aN-Zo6"/>
+                    <constraint firstItem="RVF-SI-ylT" firstAttribute="bottom" secondItem="PQn-oV-Ftd" secondAttribute="bottom" constant="15" id="Tdo-fq-mQD"/>
+                    <constraint firstAttribute="bottom" secondItem="REu-uH-Yo6" secondAttribute="bottom" constant="16" id="Y10-G2-1PA"/>
+                    <constraint firstItem="PQn-oV-Ftd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="izd-a3-RxV"/>
+                    <constraint firstAttribute="trailing" secondItem="REu-uH-Yo6" secondAttribute="trailing" id="krT-vX-58O"/>
+                    <constraint firstItem="REu-uH-Yo6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tRd-dA-h3o"/>
+                    <constraint firstItem="REu-uH-Yo6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="z0f-Rg-Fkl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chooseImageButton" destination="RVF-SI-ylT" id="3hJ-Y0-RC5"/>
+                <outlet property="collectionView" destination="REu-uH-Yo6" id="5gX-8f-vfG"/>
+                <outlet property="profileImageView" destination="wJ8-W5-8Qf" id="Hnq-8D-nho"/>
+                <outlet property="shadowView" destination="PQn-oV-Ftd" id="yMv-x2-F5j"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="164.39732142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="camera" width="30" height="30"/>
+    </resources>
+</document>

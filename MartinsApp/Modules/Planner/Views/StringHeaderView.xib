@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StringHeaderView" customModule="MartinsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFc-vH-EBA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWA-34-9Qu">
+                    <rect key="frame" x="20" y="39" width="374" height="24"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="JWA-34-9Qu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="83I-Uy-Fua"/>
+                <constraint firstAttribute="bottom" secondItem="LFc-vH-EBA" secondAttribute="bottom" id="Fnk-3q-3T1"/>
+                <constraint firstItem="JWA-34-9Qu" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-10" id="Sl7-WV-qrL"/>
+                <constraint firstItem="LFc-vH-EBA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W6H-Ae-gBV"/>
+                <constraint firstItem="JWA-34-9Qu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ZRI-sX-zBD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LFc-vH-EBA" secondAttribute="trailing" id="bJH-VK-seI"/>
+                <constraint firstItem="LFc-vH-EBA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kdp-0O-AOe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JWA-34-9Qu" secondAttribute="trailing" constant="20" id="tem-1v-Tfp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headerLabel" destination="JWA-34-9Qu" id="oNZ-wQ-1F8"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="-128"/>
+        </view>
+    </objects>
+</document>

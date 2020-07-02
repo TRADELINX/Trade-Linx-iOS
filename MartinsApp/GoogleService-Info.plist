@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>842121899339-osj51ckre1ca8uibohfgrkugdp6fom8h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.842121899339-osj51ckre1ca8uibohfgrkugdp6fom8h</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>842121899339-8pdaltr1rdjiitr0eabj1nd2eehu599e.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDaaecSXFoTn6WJFbvIUz4tSChyuhfmr1k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>842121899339</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Tradelinx.Tradelinx</string>
+	<key>PROJECT_ID</key>
+	<string>martinsapp-1561193292872</string>
+	<key>STORAGE_BUCKET</key>
+	<string>martinsapp-1561193292872.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:842121899339:ios:b5f0aae7dd9945420eccce</string>
+	<key>DATABASE_URL</key>
+	<string>https://martinsapp-1561193292872.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConversationHeaderView" customModule="MartinsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyN-dC-AYQ">
+                    <rect key="frame" x="178" y="0.0" width="58" height="73"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4K7-I5-DfQ">
+                            <rect key="frame" x="8" y="8" width="42" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4K7-I5-DfQ" firstAttribute="leading" secondItem="EyN-dC-AYQ" secondAttribute="leading" constant="8" id="FxG-tx-knf"/>
+                        <constraint firstAttribute="bottom" secondItem="4K7-I5-DfQ" secondAttribute="bottom" constant="8" id="a1X-uy-RiJ"/>
+                        <constraint firstItem="4K7-I5-DfQ" firstAttribute="top" secondItem="EyN-dC-AYQ" secondAttribute="top" constant="8" id="mOR-WD-48l"/>
+                        <constraint firstAttribute="trailing" secondItem="4K7-I5-DfQ" secondAttribute="trailing" constant="8" id="ucg-is-opZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="EyN-dC-AYQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="6Ub-b9-B6X"/>
+                <constraint firstItem="EyN-dC-AYQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cQV-4e-8tP"/>
+                <constraint firstItem="EyN-dC-AYQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gbS-Mb-Z8D"/>
+                <constraint firstAttribute="bottom" secondItem="EyN-dC-AYQ" secondAttribute="bottom" id="mA9-l0-qjx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dateTimeLabel" destination="4K7-I5-DfQ" id="3vG-Ve-ac2"/>
+                <outlet property="decorationView" destination="EyN-dC-AYQ" id="OjV-hl-lSk"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-122.87946428571428"/>
+        </view>
+    </objects>
+</document>

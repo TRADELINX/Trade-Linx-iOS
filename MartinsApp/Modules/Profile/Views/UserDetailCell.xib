@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="UserDetailCell" customModule="MartinsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdA-lL-Ee5">
+                        <rect key="frame" x="16" y="16" width="288" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="240" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpC-n4-GtV">
+                        <rect key="frame" x="16" y="38.5" width="288" height="50.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQk-mX-oFY">
+                        <rect key="frame" x="0.0" y="104" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="v9C-sg-KSI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SpC-n4-GtV" firstAttribute="top" secondItem="rdA-lL-Ee5" secondAttribute="bottom" constant="4" id="6zA-9v-iuh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SpC-n4-GtV" secondAttribute="trailing" id="B86-RF-lSa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rdA-lL-Ee5" secondAttribute="trailing" id="BQl-xd-tGl"/>
+                    <constraint firstItem="rdA-lL-Ee5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="FDc-Ht-2Fh"/>
+                    <constraint firstAttribute="trailing" secondItem="kQk-mX-oFY" secondAttribute="trailing" id="Igr-wU-4Me"/>
+                    <constraint firstAttribute="bottom" secondItem="SpC-n4-GtV" secondAttribute="bottom" constant="16" id="UXa-Os-nGB"/>
+                    <constraint firstAttribute="bottom" secondItem="kQk-mX-oFY" secondAttribute="bottom" id="jSh-En-egV"/>
+                    <constraint firstItem="kQk-mX-oFY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kFl-c0-G5K"/>
+                    <constraint firstItem="SpC-n4-GtV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="l0H-e8-whO"/>
+                    <constraint firstItem="rdA-lL-Ee5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xxN-r6-Sd3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailLabel" destination="SpC-n4-GtV" id="ggM-aR-OIX"/>
+                <outlet property="seperatorView" destination="kQk-mX-oFY" id="hRF-w8-cMU"/>
+                <outlet property="titleLabel" destination="rdA-lL-Ee5" id="lQh-L4-jCu"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="168.41517857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

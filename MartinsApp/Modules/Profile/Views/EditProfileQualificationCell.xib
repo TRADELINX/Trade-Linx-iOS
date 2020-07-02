@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="KGk-i7-Jjw" customClass="EditProfileQualificationCell" customModule="MartinsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d49-8D-nvP">
+                        <rect key="frame" x="16" y="16" width="288" height="16"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="755" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbb-k4-2Qk">
+                        <rect key="frame" x="16" y="40" width="288" height="100"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4am-p5-hwX" customClass="ShadowButton" customModule="MartinsApp" customModuleProvider="target">
+                        <rect key="frame" x="16" y="156" width="145" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="mP0-LF-Amk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins Medium" pointSize="15"/>
+                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                        <state key="normal" title="UPLOAD PHOTO"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="uploadPhotoAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Att-aD-uNk"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="B0t-3Z-3EQ">
+                        <rect key="frame" x="0.0" y="40" width="320" height="100"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Smf-uO-7Dg"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KVd-pU-TiN">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d49-8D-nvP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="07C-dy-HbF"/>
+                    <constraint firstItem="4am-p5-hwX" firstAttribute="top" secondItem="B0t-3Z-3EQ" secondAttribute="bottom" constant="16" id="0wo-d8-GKz"/>
+                    <constraint firstItem="d49-8D-nvP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="1dV-nj-cDQ"/>
+                    <constraint firstItem="wbb-k4-2Qk" firstAttribute="trailing" secondItem="B0t-3Z-3EQ" secondAttribute="trailing" constant="-16" id="5Ns-NY-6xv"/>
+                    <constraint firstItem="wbb-k4-2Qk" firstAttribute="bottom" secondItem="B0t-3Z-3EQ" secondAttribute="bottom" id="9vf-eb-1Dq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="d49-8D-nvP" secondAttribute="trailing" id="IVO-71-Qob"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="4am-p5-hwX" secondAttribute="trailing" constant="8" id="JZk-cv-Zjc"/>
+                    <constraint firstItem="wbb-k4-2Qk" firstAttribute="leading" secondItem="B0t-3Z-3EQ" secondAttribute="leading" constant="16" id="Ja4-gg-cm0"/>
+                    <constraint firstAttribute="trailing" secondItem="B0t-3Z-3EQ" secondAttribute="trailing" id="Ndn-34-drA"/>
+                    <constraint firstItem="4am-p5-hwX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="T8p-aQ-sHg"/>
+                    <constraint firstItem="B0t-3Z-3EQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZFr-7K-gbw"/>
+                    <constraint firstItem="wbb-k4-2Qk" firstAttribute="top" secondItem="B0t-3Z-3EQ" secondAttribute="top" id="dY0-d6-Wzu"/>
+                    <constraint firstAttribute="bottom" secondItem="4am-p5-hwX" secondAttribute="bottom" constant="16" id="uz1-R0-DyH"/>
+                    <constraint firstItem="B0t-3Z-3EQ" firstAttribute="top" secondItem="d49-8D-nvP" secondAttribute="bottom" constant="8" id="xTu-ge-5yQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="B0t-3Z-3EQ" id="uGf-id-B24"/>
+                <outlet property="detailLabel" destination="wbb-k4-2Qk" id="6SS-1f-Cpt"/>
+                <outlet property="titleLabel" destination="d49-8D-nvP" id="bGf-Ae-49O"/>
+                <outlet property="uploadButton" destination="4am-p5-hwX" id="5va-cv-Dgq"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="204.91071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
